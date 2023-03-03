@@ -9,10 +9,16 @@ import Home from './views/pages/Home'
 export default function App() {
     return (
         <SafeAreaProvider>
-            <View>
+            <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center' }}>
                 <Home />
             </View>
         </SafeAreaProvider>
+
+        // <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center' }}>
+        //     <View style={{ flex: 1, backgroundColor: 'red' }} />
+        //     <View style={{ flex: 2, backgroundColor: 'darkorange' }} />
+        //     <View style={{ flex: 3, backgroundColor: 'green' }} />
+        // </View>
 
     )
 }
