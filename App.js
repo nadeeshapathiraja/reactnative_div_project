@@ -6,15 +6,22 @@ import { SafeAreaProvider } from 'react-native-safe-area-context'
 import NicInfo from './views/pages/NicInfo'
 import Home from './views/pages/Home'
 import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+
+const Stack = createStackNavigator();
 
 export default function App() {
     return (
 
         <NavigationContainer>
             <SafeAreaProvider>
-                <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center' }}>
+                {/* <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center' }}>
                     <Home />
-                </View>
+                </View> */}
+                <Stack.Navigator>
+                    <Stack.Screen name="Login" component={Login} />
+                    <Stack.Screen name="Home" component={Home} />
+                </Stack.Navigator>
             </SafeAreaProvider>
         </NavigationContainer>
 
