@@ -1,10 +1,10 @@
 import { View, Text, Touchable, TouchableOpacity, StyleSheet } from 'react-native'
 import React from 'react'
 
-export default function RoundedBtn() {
+export default function RoundedBtn(props) {
     return (
         <TouchableOpacity style={{ backgroundColor: 'red', width: 100, height: 100, borderRadius: 100, alignItems: 'center', justifyContent: 'center', }}>
-            <Text style={styles.textStyle}>Clear</Text>
+            <Text style={styles.textStyle}>{props.name}</Text>
         </TouchableOpacity>
     )
 }

@@ -66,10 +66,10 @@ export default function Home() {
                 flex: 1, flexDirection: 'row', paddingTop: 50,
             }}>
                 <View style={styles.roundedBtn}>
-                    <RoundedBtn />
+                    <RoundedBtn name='Btn1' />
                 </View>
                 <View style={styles.roundedBtn}>
-                    <RoundedBtn />
+                    <RoundedBtn name='Btn2' />
                 </View>
             </View>
 
