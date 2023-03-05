@@ -5,14 +5,17 @@ import Login from './views/pages/Login'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
 import NicInfo from './views/pages/NicInfo'
 import Home from './views/pages/Home'
+import { NavigationContainer } from '@react-navigation/native';
 
 export default function App() {
     return (
-        <SafeAreaProvider>
+
+        <NavigationContainer><SafeAreaProvider>
             <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center' }}>
                 <Home />
             </View>
-        </SafeAreaProvider>
+        </SafeAreaProvider></NavigationContainer>
+
 
         // <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center' }}>
         //     <View style={{ flex: 1, backgroundColor: 'red' }} />
