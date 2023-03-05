@@ -10,11 +10,13 @@ import { NavigationContainer } from '@react-navigation/native';
 export default function App() {
     return (
 
-        <NavigationContainer><SafeAreaProvider>
-            <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center' }}>
-                <Home />
-            </View>
-        </SafeAreaProvider></NavigationContainer>
+        <NavigationContainer>
+            <SafeAreaProvider>
+                <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center' }}>
+                    <Home />
+                </View>
+            </SafeAreaProvider>
+        </NavigationContainer>
 
 
         // <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center' }}>
