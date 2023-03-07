@@ -3,7 +3,7 @@ import React from 'react';
 import { TextInput } from 'react-native-paper';
 import { Button } from 'react-native-paper';
 import RoundedBtn from '../components/RoundedBtn';
-export default function Home() {
+export default function Home({ navigation }) {
     return (
         <View style={{ flex: 1, flexDirection: 'column', paddingHorizontal: 10, justifyContent: 'center', }}>
             <View style={{

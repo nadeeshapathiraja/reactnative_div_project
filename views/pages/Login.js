@@ -4,7 +4,7 @@ import { TextInput } from 'react-native-paper';
 import { Button } from 'react-native-paper';
 import { DatePickerInput } from 'react-native-paper-dates';
 
-export default function Login() {
+export default function Login({ navigation }) {
     const [email, setEmail] = useState(undefined);
     const [password, setPassword] = useState(undefined);
 
@@ -42,7 +42,7 @@ export default function Login() {
                 inputMode="start"
             />
 
-            <Button icon="camera" mode="contained" style={styles.btn} onPress={onLogin}>
+            <Button icon="camera" mode="contained" style={styles.btn} onPress={() => navigation.navigate('Home')}>
                 Press me
             </Button>
         </View>
